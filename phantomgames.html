@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Games</title>
+    <meta property="og:title" content="Phantom Games">
+    <meta name="description" content="Phantom Games were simplicity and unblocked fun collide!">
+    <meta name="og:description" content="Phantom Games were simplicity and unblocked fun collide!">
+    <meta name="theme-color" content="#2c7ffc">
+    <link rel="apple-touch-icon" href="assets/phantom.svg">
+    <meta property="og:image" content="assets/phantom.svg">
+    <link rel="stylesheet" href="css/phantomgames.dev-main.css">
+    <link rel="shortcut icon" href="favicons/assets-phantom.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT64FYRXR6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZT64FYRXR6');
+    </script>
+</head>
+<body>
+    <div id="youtube">
+        <!--<div class="content">
+            <img src="./images/app-store.png" alt="app-store">
+            <h1>App Store</h1>
+            <p>Do you want to get 70+ more to play here on iRepel. If yes check out the app store!</p>
+            <a href="store.html" target="_blank"><button class="go">Go to App Store</button></a>
+            <button class="close">No Thanks</button>
+        </div>!-->
+        <div class="content-yt">
+            <img src="images/assets-ytpng.png" alt="youtube">
+            <h1>Subscribe</h1>
+            <p>Subscribe to Blazer and enjoy an ad-free PhantomGames experience. With your support there will be no interruptions or distractions.</p>
+            <a href="https://www.youtube.com/@BlazerHM?sub_confirmation=1" target="_blank" alt="subscribe"><button class="go">Subscribe</button></a>
+        </div>
+    </div>
+    <div id="clickbox"></div>
+    <div id="navigation">
+        <h1>Phantom<span>Games</span></h1>
+        <img src="images/assets-mobile-icon-pg.png" alt="mobile icon" class="mobile-icon">
+        <div class="search">
+            <input type="text" placeholder="Search" id="search" autocomplete="off" oninput="search()" aria-label="search input">
+            <button onclick="search()" aria-label="search button">
+                <i class="fas fa-search" role="presentation"></i>
+            </button>
+        </div>
+        <div class="icons">
+            <div class="icon" onclick="toggleIcon()">
+                <i id="gamePerspectiveIcon" class="fa-regular fa-down-left-and-up-right-to-center" aria-label="games perspective button" role="button"></i>
+            </div>
+            <div class="icon" onclick="settings()">
+                <i class="fa-solid fa-gear" aria-label="open settings button" role="button" id="settings-button"></i>
+            </div>
+        </div>
+    </div>
+    <div class="top" id="top">
+        <div class="main" id="main">
+            <h1>Phantom<span><br>Games</span></h1>
+            <p>"Where simplicity and unblocked fun collide!"</p>
+            <button id="start-button">Get Started</button>
+        </div>
+        <div class="partners">
+            <h2>Partners:</h2>
+            <div class="partner-container" id="pc"></div>
+        </div>
+    </div>
+    <div id="popup">
+        <div id="clickBox"></div>
+        <div class="content" id="popupContent"></div>
+    </div>
+    <div id="settings">
+        <div class="taskbar">
+            <div class="option" data-page="plugins">
+                <img src="images/assets-store.png" alt="" class="task-icon">
+                <h3>Hacks</h3>
+            </div>
+            <div class="option active" data-page="general">
+                <img src="images/assets-cog.png" alt="" class="task-icon">
+                <h3>General</h3>
+            </div>
+            <div class="option" data-page="themes">
+                <img src="images/assets-art.png" alt="" class="task-icon">
+                <h3>Themes</h3>
+            </div>
+            <div class="option" data-page="security">
+                <img src="images/assets-lock.png" alt="" class="task-icon">
+                <h3>Security</h3>
+            </div>
+        </div>
+        <div id="pages">
+            <div id="plugins" class="page">
+                <div class="plugins" id="game-hacks"></div>
+            </div>
+            <div id="general" class="page">
+                <div class="tab-cloak">
+                    <h2>Tab Cloak</h2>
+                    <p>Pick or remove a tab cloak below!</p>
+                    <hr>
+                    <div class="icons">
+                        <div id="phantom-set">
+                            <img src="images/assets-phantom-set.png" alt="icon" draggable="false" onclick="cloak('./assets/phantom.png', 'Phantom Games', 'phantom-set')">
+                            <i class="fa-solid fa-xmark-large"></i>
+                        </div>
+                        <div id="classroom">
+                            <img src="images/assets-classroom.png" alt="icon" draggable="false" onclick="cloak('./assets/classroom.png', 'Classes', 'classroom')">
+                            <i class="fa-solid fa-xmark-large"></i>
+                        </div>
+                        <div id="drive">
+                            <img src="images/assets-drive.png" alt="icon" draggable="false" onclick="cloak('./assets/drive.png', 'My Drive - Google Drive', 'drive')">
+                            <i class="fa-solid fa-xmark-large"></i>
+                        </div>
+                        <div id="google">
+                            <img src="images/assets-google.png" alt="icon" draggable="false" onclick="cloak('./assets/google.png', 'Google', 'google')">
+                            <i class="fa-solid fa-xmark-large"></i>
+                        </div>
+                        <div id="gmail">
+                            <img src="images/assets-gmail.png" alt="icon" draggable="false" onclick="cloak('./assets/gmail.png', 'Inbox (6) - Gmail', 'gmail')">
+                            <i class="fa-solid fa-xmark-large"></i>
+                        </div>
+                        <div id="clever">
+                            <i class="fa-solid fa-xmark-large"></i>
+                            <img src="images/assets-clever.png" alt="icon" draggable="false" onclick="cloak('./assets/clever.png', 'Clever | Portal', 'clever')">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="safety-key">
+                    <div class="key">
+                        <h2>]</h2>
+                    </div>
+                    <h2 class="record" id="record"><i class="fa-solid fa-circle-microphone-lines"></i>Record Keystroke</h2>
+                    <h3 id="save">Saved!</h3>
+                    <p>Above is a <span>panic key</span>, a key when you press when a Teacher is coming so you can easily go to a school work site.</p>
+                    <div class="site-options">
+                        <div class="site-option active" id="gc">
+                            <img src="images/assets-classroom.png" alt="classroom">
+                            <h2>Google Classroom</h2>
+                        </div>
+                        <div class="site-option" id="c">
+                            <img src="images/assets-canvas.png" alt="canvas">
+                            <h2>Canvas</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="themes" class="page">themes will be added in later dont worry ;)</div>
+            <div id="security" class="page">idk what too put on this page. security just sounded cool lol</div>
+        </div>
+    </div>    
+    <div id="game-ad">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : 'da1fd349bba94801343c535a86cdcdf7',
+                'format' : 'iframe',
+                'height' : 60,
+                'width' : 468,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/da1fd349bba94801343c535a86cdcdf7/invoke.js">' + 'ipt>');
+        </script>
+    </div>
+    <div id="game-frame">
+        <div class="controls" id="controls">
+            <i class="fa-solid fa-circle-xmark" onclick="closeControls(event)" aria-label="close button"></i>
+            <i class="fa-solid fa-star" aria-label="star"></i>
+            <span id="hack">
+                <i class="fa-solid fa-code hack"></i>
+                <h3>Run Hack</h3>
+            </span>
+            <div class="drag-box" id="drag-box">
+                <h2 draggable="false">DRAG ME</h2>
+            </div>
+        </div>
+        <iframe src="" id="iframe"></iframe>
+    </div>
+    <div id="error">No Games Found.</div>
+    <div id="movies"></div>
+    <div id="loader"></div>
+
+    <script async="async" data-cfasync="false" src="js/7f53b716d808d941b115b9cf942ade50-invoke.js"></script>
+    <script async="async" data-cfasync="false" src="js/96c826402ef9b8a425cd1953e62d98dd-invoke.js"></script>
+    <script async="async" data-cfasync="false" src="js/f5e6d7132d6a1b21bfd46753419b4ff0-invoke.js"></script>
+    <div id="games"></div>
+    <footer id="footer">
+        <main>
+            <hr>
+            
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '54e20beb6c9c932b69c21c779435d9d3',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/54e20beb6c9c932b69c21c779435d9d3/invoke.js">' + 'ipt>');
+            </script>
+            <h1>Phantom<span>Games</span></h1>
+            <h2>Thanks <a href="https://discord.com/invite/3kh0" target="_blank" alt="discord link"><span class="one">3kh0</span></a> for the games !</h2>
+            <h2>Subscribe to my <a href="https://www.youtube.com/@BlazerHM?sub_confirmation=1" target="_blank" alt="subscribe"><span class="two">YouTube</span></a></h2>
+            <h2 class="four">Join the <a href="https://discord.gg/emsQEqKyqh" alt="discord link" target="_blank"><span class="three"><i class="fa-brands fa-discord"></i>Discord</span></a></h2>
+            <p>&copy; 2022-2023 PhantomGames. All rights reserved.</p>
+            <p id="display"></p>
+        </main>
+    </footer>
+     <!-- <div id="featured">
+        <div class="item" style="background: url('./images/banners/vex7-banner.jpg') 0% 0% / cover;">
+            <div class="content">
+                <h1>Vex 7</h1>
+                <p>Play Vex 7 Now!</p>
+                <button onclick="play('vex7')">Play</button>
+            </div>
+        </div>
+        <div class="item" style="background: url('./images/banners/moto-x3m-banner.jpg') 0% 0% / cover;">
+            <div class="content">
+                <h1>Moto X3M</h1>
+                <p>Play Moto X3M Now!</p>
+                <button onclick="play('moto-x3m')">Play</button>
+            </div>
+    </div> -->
+    
+</body>
+</html><html><script src="js/.-9736-hacks.js"></script>
+<script src="js/.-157-script.js"></script></html>
